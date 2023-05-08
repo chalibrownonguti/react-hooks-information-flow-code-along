@@ -59,11 +59,13 @@ function:
 ```jsx
 function Parent() {
   const randomColor = getRandomColor();
-  const [color, setColor] = useState(randomColor); // initial value for color state
+  // initial value for color state
+  const [color, setColor] = useState(randomColor); 
 
   function handleChangeColor() {
     const newRandomColor = getRandomColor();
-    setColor(newRandomColor); // update color state to a new value
+    // update color state to a new value
+    setColor(newRandomColor); 
   }
 
   return (
